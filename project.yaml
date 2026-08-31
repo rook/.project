@@ -1,0 +1,73 @@
+# .project metadata for Rook
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Set identity_type under legal (has_dco, has_cla)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "rook"
+name: "Rook"
+description: "Storage Orchestration for Kubernetes"
+type: "project"
+project_lead: "satoru-takeuchi" # TODO: AUTO-DETECTED — please verify
+slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+  - name: "#reporting-security-vulnerabilities"
+    primary: true
+  - name: "#announcements"
+
+maturity_log:
+  - phase: "graduated"
+    date: "2018-01-29T00:00:00Z"
+    issue: "https://github.com/cncf/toc/pull/366" # TODO: AUTO-DETECTED — please verify
+
+repositories: # TODO: AUTO-DETECTED primary — please verify
+  - url: "https://github.com/rook/rook"
+    primary: true
+    # tags: [core, sig-apps] # Optional
+
+website: "https://rook.io/"
+
+artwork: "https://landscape.cncf.io/logos/rook.svg"
+
+adopters:
+  path: "https://github.com/rook/rook/blob/master/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "rook/rook"
+
+social:
+  twitter: "https://twitter.com/rook_io"
+
+security:
+  policy:
+    path: "https://github.com/rook/rook/blob/master/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/rook/rook/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/rook/rook/blob/master/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/rook/rook/blob/master/CODE_OF_CONDUCT.md"
+
+legal:
+  license:
+    path: "https://github.com/rook/rook/blob/master/LICENSE"
+  identity_type:
+    has_dco: true
+    has_cla: false
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/rook/rook/blob/master/README.md"
+
+landscape:
+  category: "Runtime"
+  subcategory: "Cloud Native Storage"
+
+# CLOMonitor Score: 92/100
+# Documentation: 97 | License: 100 | Best Practices: 95 | Security: 73
