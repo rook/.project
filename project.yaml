@@ -1,41 +1,40 @@
 # .project metadata for Rook
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Set identity_type under legal (has_dco, has_cla)
-# TODO: Add package_managers if distributed via registries
-
 schema_version: "1.0.0"
 slug: "rook"
 name: "Rook"
 description: "Storage Orchestration for Kubernetes"
 type: "project"
-project_lead: "satoru-takeuchi" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
-  - name: "#reporting-security-vulnerabilities"
+project_lead: "travisn"
+slack_channels:
+  - name: "#general"
+    link: "https://slack.rook.io"
     primary: true
   - name: "#announcements"
+  - name: "#ceph"
+  - name: "#ceph-csi"
+  - name: "#conferences"
 
 maturity_log:
   - phase: "graduated"
-    date: "2018-01-29T00:00:00Z"
-    issue: "https://github.com/cncf/toc/pull/366" # TODO: AUTO-DETECTED — please verify
+    date: "2020-10-07T00:00:00Z"
+    issue: "https://github.com/cncf/toc/pull/366"
 
-repositories: # TODO: AUTO-DETECTED primary — please verify
+repositories:
   - url: "https://github.com/rook/rook"
     primary: true
-    # tags: [core, sig-apps] # Optional
 
 website: "https://rook.io/"
 
-artwork: "https://landscape.cncf.io/logos/rook.svg"
+artwork: "https://github.com/rook/artwork"
 
 adopters:
   path: "https://github.com/rook/rook/blob/master/ADOPTERS.md"
 
-
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "rook/rook"
+package_managers:
+  docker: "rook/rook"
+  ghcr: "rook/rook-ceph"
 
 social:
   twitter: "https://twitter.com/rook_io"
@@ -63,7 +62,7 @@ legal:
 
 documentation:
   readme:
-    path: "https://github.com/rook/rook/blob/master/README.md"
+    path: "https://rook.io/docs/rook/latest-release/Getting-Started/intro/"
 
 landscape:
   category: "Runtime"
