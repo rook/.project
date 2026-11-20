@@ -27,7 +27,7 @@ repositories:
 
 website: "https://rook.io/"
 
-artwork: "https://github.com/rook/artwork"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/rook"
 
 adopters:
   path: "https://github.com/rook/rook/blob/master/ADOPTERS.md"
